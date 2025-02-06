@@ -32,7 +32,6 @@ public class Assignments1 {
 		float longitude = -122.4194f;
 		System.out.printf("%f, %f %n",latitude,longitude);
 		
-		
 		// 7. Person's marital status: true or false
 		boolean maritalStatus = true;
 		System.out.println(maritalStatus);
@@ -71,7 +70,6 @@ public class Assignments1 {
 		
 		// 16.Time of an event: 2:30 PM
 		//int time = 1430;
-		
 		
 		// 17.Name of a country: "United States"
 		String countryName = "United States";
