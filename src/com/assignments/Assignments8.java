@@ -42,37 +42,34 @@ public class Assignments8 {
 		int bonusPerks = 0;
 		Double hike = 0.0;
 		Double hikePercentage = 0.0;
-		for (String empname : employeeName) {
-			if (employeeRating.get(empname) >= 4.0) {
+		for (String empName : employeeName) {
+			if (employeeRating.get(empName) >= 4.0) {
 				variablePay+=15;
 				bonus+=1500;
-				if (employeeExperience.get(empname) > 5.0){
-					bonusPerks+=5000;
-				}
-			}else if (employeeRating.get(empname) > 3.0 && employeeRating.get(empname) < 4.0) {
+				
+			}else if (employeeRating.get(empName) > 3.0 && employeeRating.get(empName) < 4.0) {
 					variablePay+=10;
 					bonus+=1200;
-					if (employeeExperience.get(empname) > 5.0){
-						bonusPerks+=5000;
-				}
-			} else if (employeeRating.get(empname) < 3.0) {
+				
+			} else if (employeeRating.get(empName) < 3.0) {
 				variablePay+=3;
 				bonus+=300;
-				if (employeeExperience.get(empname) > 5.0){
-					bonusPerks+=5000;
-			}
+				
 		}
+			if (employeeExperience.get(empName) > 5.0){
+				bonusPerks+=5000;
+		    }
 			//System.out.println(employeeExperience.get(empName));
 			//System.out.println(employeeSalary.get(empName));
 			//System.out.println(employeeRating.get(empName));
 			
 			
 			
-			hike = (employeeSalary.get(empname)*variablePay) + bonus + bonusPerks;
-			hikePercentage = hike/employeeSalary.get(empname);
+			hike = (employeeSalary.get(empName)*variablePay) + bonus + bonusPerks;
+			hikePercentage = hike/employeeSalary.get(empName);
 			
 			Map<String, Double> employeeHike = new HashMap<String, Double>(); 
-			employeeHike.put(empname, hikePercentage);
+			employeeHike.put(empName, hikePercentage);
 			
 			 variablePay = 0;
 			 bonus = 0;
